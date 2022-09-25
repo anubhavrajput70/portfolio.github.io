@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f8da5b0f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-regular fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+            
+                <h1>Hi, I'm <span>Anubhav</span><br> Rajput</h1>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Text refers to the actual words written in a book, 
+                        newspaper, blog post, or any other written work.
+                         Pictures, charts, and other images are not text. 
+                         When you read something, you are looking at text and
+                          using your language skills to get meaning out of it. 
+                          Something that doesn’t contain any text is textless. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C Language, JAVA</li>
+                            <li><span>IT Constructs</span><br>OOPS, Data Structures and Algorithms</li>
+                            <li><span>Development Tools</span><br>Eclipse, Netbeans, Microsoft visual studio</li>
+                            <li><span>DB Language</span><br>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Feb 2022 - current</span><br>Engineer at Mindtree Ltd</li>
+                            <li><span>Jun 2019 - July 2019</span><br>Intern at JTEKT India Limited</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017 - 2021</span><br>B.Tech CSE from Kunwar Satyavira College of Engineering & Managment<br>CGPA: 7.25</li>
+                            <li><span>2016 - 2017</span><br>12th from CBSE Board </li>
+                            <li><span>2014 - 2015</span><br>10th from CBSE Board <br>CGPA: 8.6</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Technical Blog Site</h3>
+                        <p>It is a simple ui based web application which
+                             is created using java servlets and JSP</p>
+                        <a href="https://github.com/anubhavrajput70/TechnicalBlog"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>User Management Web app</h3>
+                        <p> Build a simple User Management web application that manages a collection of users</p>
+                        <a href="https://github.com/anubhavrajput70/UserManagementApp/tree/main/UserManagement"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/anubhavrajput70?tab=repositories" class="btn">See More</a>
+
+
+        </div>
+    </div>
+
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>anubhavrajput@gmail.com</p>
+                    <p><i class="fa-regular fa-square-phone"></i> +917060577074</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/anubhavrajput__?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anubhav-rajput-2936b7203/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="image/Anubhav-Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Anubhav. Made with <i class="fa-solid fa-heart"></i> by Anubhav Rajput</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+        
+
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby_WCKSpb9QSWVNsvYQDmPOJL0LDI73Vmou7sccTJZvCRdNTuqwTC5z1BQyOHwaeM1m/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{msg.innerHTML="Message sent successfully"
+    setTimeout(function(){
+        msg.innerHTML=""
+    },5000) })
+    form.reset()
+})
+        .catch(error => console.error('Error!', error.message))
+   
+  </script>
+</body>
+</html>
